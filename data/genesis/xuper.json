@@ -21,10 +21,17 @@
     },
     "new_account_resource_amount": 1000,
     "genesis_consensus": {
-        "name": "single",
+        "name": "raft",
         "config": {
-            "miner": "TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY",
-            "period": "3000"
+            "period":3000,
+            "snap_count":10,
+            "election_tick":10,
+            "heartbeat_tick":1,
+            "cluster_peers":[
+                "TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY",
+                "SmJG3rH2ZzYQ9ojxhbRCPwFiE9y6pD1Co",
+                "iYjtLcW6SVCiousAb5DFKWtWroahhEj4u"
+            ]
         }
     }
 }
